@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /*Agregamos margenes inferiores a los parrafos*/
+  p {
+    margin-bottom: 20px;
+  }
+
+
+  header {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+
+  nav {
+    float: left; 
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background: red;
+  }
+
+/*El ejemplo ha sido realizado responsive mediante css flex*/
+
+/*Quito margen y padding al body*/
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Ajusto ancho, alto, espacio de letra, y la distancia entre líneas */
+body{
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+/*Ajusto la alineación, tamaño de fuente, color, margen superior y el grosor de la letra*/
+#titulo{
+    text-align: center;
+    font-size:40px;
+    color: #6a6a6a;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+/*Ajusto el ancho, ancho máximo, altura, agrego display flex, obligo a permanecer en la misma línea a los elementos hijos, alineo al centro y agrego un margen automático*/
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/*Ajusto el ancho y el alto, quito border-radius, agrego efectos de sombra, recorto el contenido con overflow:hidden; agrego margen, alineación y defino una transición entre dos estados a todos los elementos con una duración específica*/
+.contenedor .tarjeta{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+/*Translado el elemento de manera vertical a lo largo del eje Y, agrego sombras*/
+.contenedor .tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+/*Ajusto ancho y alto*/
+.contenedor .tarjeta img{
+    width: 330px;
+    height: 220px;
+}
+
+
+
+
+
+
+
+
+
+
