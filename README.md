@@ -1,1 +1,1 @@
-# hito-grupal-diw
+# hito-grupal-diw Miguel rodriguez y Óscar Pachecho
